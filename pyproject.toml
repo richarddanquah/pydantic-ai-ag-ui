@@ -4,7 +4,7 @@ tool.uv.package = true
 name = "server"
 version = "0.1.0"
 description = "Example usage of the AG-UI adapter for Pydantic AI"
-license = "MIT"
+license = ""
 
 readme = "README.md"
 requires-python = ">=3.9"
