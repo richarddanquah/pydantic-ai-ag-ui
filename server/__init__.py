@@ -4,6 +4,8 @@ This provides a FastAPI application that demonstrates how to use the
 Pydantic AI agent with the AG-UI protocol. It includes examples for
 each of the AG-UI features:
 - Human in the Loop
+- Predictive State Updates
+- Shared State
 """
 
 from __future__ import annotations
@@ -17,6 +19,8 @@ import os
 
 from .api import (
     human_in_the_loop_app,
+    predictive_state_updates_app,
+    shared_state_app,
 )
 
 
@@ -33,7 +37,8 @@ app.add_middleware(
 )
 
 app.mount('/human_in_the_loop', human_in_the_loop_app, 'Human in the Loop')
-
+app.mount('/predictive_state_updates', predictive_state_updates_app, 'Predictive State Updates')
+app.mount('/shared_state', shared_state_app, 'Shared State')
 
 def main():
     """Main function to start the FastAPI server."""

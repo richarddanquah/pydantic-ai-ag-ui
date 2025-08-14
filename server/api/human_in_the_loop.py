@@ -40,8 +40,7 @@ with logfire.span("initialize_agent"):
     ),
 )
     
-logfire.info("Agent initialized", 
-              model=os.getenv('MODEL_NAME', 'openai:gpt-4o-mini'))
+logfire.info("Agent initialized", model=os.getenv('MODEL_NAME', 'openai:gpt-4o-mini'))
 
 app = agent.to_ag_ui()
 logfire.info("AG-UI interface created")

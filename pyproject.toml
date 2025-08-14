@@ -4,7 +4,7 @@ tool.uv.package = true
 name = "server"
 version = "0.1.0"
 description = "Example usage of the AG-UI adapter for Pydantic AI"
-license = ""
+license = "MIT"
 
 readme = "README.md"
 requires-python = ">=3.9"
@@ -15,7 +15,9 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "logfire>=4.1.0",
 ]
-authors = []
+authors = [
+    { name = "Richard Danquah" }
+]
 
 [project.scripts]
 dev = "server:main"
